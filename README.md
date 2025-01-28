@@ -9,9 +9,7 @@ To run the demo
 ```
 git clone https://github.com/ThixotropicFluid/Plates
 cd Plates
-cd build
-cmake ..
-cd ..
-cmake --build build
-an executable will be in build/Debug
+cmake 
+cmake --build .
+an executable will be in Debug
 ```
