@@ -17,7 +17,7 @@ void GenerateTerrain(TerrainData* data) {
     setPerlinSeed(04);
     for(int i = 0; i < data->width + 1; i ++) {
         for(int j = 0; j < data->height + 1; j++) {
-            float res = (perlin((float)i/10, (float)j/10, 0.5)- 0.5f) * 10.0f;
+            float res = (perlin((float)i/10, (float)j/10, 0.5)- 0.5f);
             data->height_map[i * (data->width + 1) + j] = res;
             //data->height_map[i * (data->width + 1) + j] = 0;
         }
