@@ -17,8 +17,13 @@ an executable will be in Debug
 Controlls:
 
 W - Forawrd
+
 A - Left Strafe
+
 S - Back
+
 D - Right Strafe
+
 Z - Focus 0, 0, 0
+
 C - Cycle Terrain Texture
