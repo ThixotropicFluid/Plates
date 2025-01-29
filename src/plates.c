@@ -9,7 +9,7 @@
 void GenerateTerrain(TerrainData* data) {
     // alloc memory
     data->height_map = MemAlloc(sizeof(float) * (data->width + 1) * (data->height + 1));
-    data->image_count = 0; // currenly no texture data, 
+    data->image_count = 1; // currenly no texture data, 
     data->images = MemAlloc(sizeof(Image) * data->image_count);
     data->textures = MemAlloc(sizeof(Texture2D) * data->image_count);
 
@@ -24,7 +24,9 @@ void GenerateTerrain(TerrainData* data) {
         
     }
 
-    
+    data->images[0] = GenImageChecked(data->width, data->height, 1, 1, PINK, ORANGE);
+    data->textures[0] = LoadTextureFromImage(data->images[0]);
+
 }
 
 void UnloadTerrain(TerrainData* data) {
