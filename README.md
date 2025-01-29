@@ -11,5 +11,5 @@ git clone https://github.com/ThixotropicFluid/Plates
 cd Plates
 cmake 
 cmake --build .
+```
 an executable will be in Debug
-``` 
